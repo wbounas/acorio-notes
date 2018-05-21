@@ -1,0 +1,58 @@
+List Administration (Max Dore)
+What is a List?
+- Technically a report
+- An informative
+
+*In ServiceNow:*
+Row === /Record/
+Field === /Column/
+Data is EVERYTHING
+Data is stored in Tables
+Lists are how we view Tables in ServiceNow
+
+Changing the view of a table in your instance ONLY changes your PDI-view, not for everyone who will then view that table
+
+List Filters
+3 Ways:
+1. Title Bar: At the top of the list (next to `Search [dropdown]`)
+2. Filter Icon: Lets you choose any of the fields (columns) in the table
+3. The Columns: Search insie each individual columns
+
+The more you filter, the more your breadcrumb trail gets bigger
+
+Wild Cards: extra characters added to your search values to help refine your queried search
+
+*searchValue = contains the search value somewhere in the field
+
+Global View = What everyone sees
+Personalized List View = What you see with your specific changes to the list
+
+Acorio Express Experts = Brianne, Chris, and David
+
+Boost: feature that has been built by Acorio
+- Extra add-on to the ServiceNow Platform
+- Documentation provided by Acorio
+
+KSC = search description Boost built by Acorio
+
+What is a form? A form displays fields for a single record, and allows users to edit those fields or the content within them
+
+If you have the "Number" of a form, enter it into the Global Search Field and you will find it instantly
+
+In Form Layout:
+Adding to another slush bucket...
+/Green/ - References another Table
+/Red/ - List 
+
+UI Actions are either BUTTONS or RELATED LINKS
+EX: Update, Resolve, Save, Delete
+
+Update does not leave the page
+Save will leave the page, taking you to the last page in the instance (regardless of the tab you were in)
+
+NOTE: Right-clicking on the header opens up the /Context Menu/
+
+
+
+
+

@@ -1,0 +1,9 @@
+Scripting Challenge Recap Week #1
+
+Kenny Gable
+
+Highlight VIP Caller - Business Rule for accessing VIP
+
+cache.do
+**helpful tip**
+allows page to load alot faster 

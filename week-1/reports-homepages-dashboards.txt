@@ -1,0 +1,20 @@
+Reports, Homepages, and Dashboards (Jesse Nocon)
+
+What can we report on?
+*Metrics*: A method of measuring something, or the results obtained from this
+  - EX: "the report provides various metrics demonstrating stark sales performance this quarter"
+  - Any existing field
+  - One table at a time
+- 167 Reports OOB already set up!
+  - My reports: reports the user has created
+  - Group: reports the user created, shared with the user, and shared with groups the user is a member of
+  - Global: reports available to all users with the ITIL role
+  - All: all of the above^ combined
+
+Purpose of Reports: Helping people get their jobs done better
+- Find out what someone's job is
+- Find out the pain points of their job, what they have hard times with and try to make it easier
+
+Good opportunity to flex creativity ASAP
+
+NOTE: DO NOT WANT TO USE TABLES as Source TYPE
