@@ -15,6 +15,7 @@ cmd+shift+j = *JavaScript Executor*
 
 GlideAJAX
 If you make AJAX calls, you want the `answer` attribute inside of an XML payload
-- If someone asks you if you want XML or JSON back, really you're _always_ getting `XML` back, just looking for that particular attribute `answer` and pulling its value
+- If someone asks you if you want XML or JSON back, really you're _always_ getting `XML` 
+  back, just looking for that particular attribute `answer` and pulling its value
 
 
