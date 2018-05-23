@@ -1,11 +1,11 @@
-# Express & OSP 101 (Ricky + Stephen from ServiceNow)
+# Express & OSP 101 (Ricky + Stephen from Service Now)
 
-What you will learn
+_What you will learn_
 - How to speak with confidence about Express
 - How to be an Outsourced Strategic Partner (OSP)
 - How to adopt Remote Services
 
-Express Background
+**Express Background**
 Express is _fast_ for customers
 - Fast solution
   - Can deploy in a couple weeks
@@ -14,9 +14,9 @@ Express is _fast_ for customers
 - Guides you through the process
 
 Sometimes, when you get into the weeds of the application, you open a can of worms
-  - Sometimes, less is more
+  - Sometimes, less is more when diving into topics
 
-Features Originally Deveoped for Express
+**Features Originally Deveoped for Express**
 - System Admin Dashboard
   - One central location to find their toolkits
 - Guided Setup
@@ -26,13 +26,12 @@ Features Originally Deveoped for Express
 - MID Server Installation Wizard
 
 Sometimes, these features are tailored to _Express_, not the ServiceNow Platform
-
 - Customers need to _upgrade_ to gain access to their plugins
 - HR
 - Performance Analytics
 - Etc..
 
-Try to feel out where the client is in their ServiceNow Journey
+**Try to feel out where the client is in their ServiceNow Journey**
 - This will help determine how deep you want to go into any particular topic
 
 **New ITSM Features and Options Not Available in Express**
@@ -44,9 +43,8 @@ Try to feel out where the client is in their ServiceNow Journey
 - Service Portal
 
 
-
 ## How to be an OSP
-For remote services, SN has our back
+### For remote services, SN has our back
 - If we start to miss deadlines, then they start to question the process
 
 **When you are assigned a request, you have 2 days to respond to that request**
@@ -60,7 +58,6 @@ _Remote Admin_: Bucket of hours
   - Because of this, the level of uncertainty and confusion can come in
   - As a consultant, you might have trouble `scoping the request`
 
-
 #### Make Customers Insanely Happy
 All about the CSAT
 
@@ -70,7 +67,6 @@ All about the CSAT
 
 If a customer has a backlog of requests, and has more hours available, see if you can
 leverage that to create a request on the customer's behalf
-
 - Take advantage of the escalation button
   - There is always something to learn from an escalation
 

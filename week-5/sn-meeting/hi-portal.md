@@ -18,4 +18,3 @@ Anytime you hear a customer ask for a z-boot, direct them to `Support`
 - From there, we can help them with a z-boot
 
 
-
