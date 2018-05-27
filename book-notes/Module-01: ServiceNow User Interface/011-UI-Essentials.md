@@ -1,5 +1,6 @@
 # ServiceNow System Administration Participant Guide
 ## Module 1: ServiceNow User Interface
+### Section 1.1: UI Essentials
 
 **Module 1 Objectives**
 - Examine the User Interface (UI)
@@ -121,9 +122,11 @@ desktop/laptop browser interface, including:
   - Forms
   - Filtering
 - There are no special configurations needed for the iPhone or Android phones; the smartphone
-  interface usses a familiar industry-standard techniques for performing most actions
+  interface uses a familiar industry-standard techniques for performing most actions
+
 **Tablet:** The ServiceNow instance automatically detects the tablet and redirects you to
 the tablet interface
+
 **Apple Watch:** Features include:
   - Notifications
   - Favorites
@@ -150,4 +153,30 @@ or devices to perform tasks
   - Visual Task Boards (VTBs)
   - Chats
   - Apple Watch, and more
+
+### Connect: Chat and Workplace
+#### **Chat**
+**Connect Chat** is a real-time messaging tool that lets you work with others right where the
+conversation happens
+#### **Workspace**
+The **Connect workspace** provides a full-screen view of all your Connect Chat and Connect Support
+conversations in one place
+
+ServiceNow provides several tools to help you communicate with your team in real time, based on
+information within the system
+- **Connect Chat** is accessible from the **Collaborate > Connect Chat** Modules (opens full
+  view in new tab) or from the Connect icon in the Banner (opens sidebar within Content Frame)
+- You can create new conversations with individual ServiceNow users or create custom chat groups
+- A green dot marks participants who are currently online
+  - Additional options allow you to add attachments to the chat, customize your notifications
+    to stay in the loop on the convesration, and easily view and update related records
+
+The Connect workspace provides a full-screen view of all your Connect Chat and Connect SUpport
+conversations in one place, plus additional tools to help keep track of important information
+in converations
+- To open the Connect workspace, navigate to **Collaborate > Connect Chat** or click the new
+  window icon (New window icon) in a chat mini window
+  - If you do not have any recent conversations, a screen appears with helpful information
+    about Connect
+
 
