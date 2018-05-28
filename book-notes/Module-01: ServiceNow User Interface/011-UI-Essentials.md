@@ -96,20 +96,20 @@ matching your keyword
 The Appication Navigator, sometimes called the `Left Navigation Bar`, provides access to all
 applications and the modules they contain, enabling users to quickly find information and services
 
-An application is a group of modules, or pages, that provide related information and functionality
+An `application` is a group of `modules`, or `pages`, that provide related information and functionality
 in aninstance.
-  - For example, the Incident appication contains modules for creating and viewing incidents
-  - The Configuration Management application contains modules for configuring servers, databases,
+  - For example, the `Incident` application contains modules for creating and viewing incidents
+  - The Configuration Management `application` contains modules for configuring servers, databases,
     and networks
 
-In UI16, the Application Navigator also provides access to Favorites (bookmarks), and History
+In UI16, the `Application Navigator` also provides access to Favorites (bookmarks), and History
 (recently viewed items)
 
 ### User Interface: Favorites and History
-Favorites:
-- Access the Favorites menu to see all your favorites in one place
-**NOTE:** In `UI16`, Bookmarks and Favorites are the same thing
-Your HIstory:
+`Favorites:`
+- Access the `Favorites` menu to see all your favorites in one place
+**NOTE:** In `UI16`, `Bookmarks` and `Favorites` are the same thing
+`Your History:`
 - The Navigator contains a scrolling list of yoru recent history within ServiceNow
 For Example: the forms you were filling out, lists you were seraching on, homepages you were
 	     viewing: all these are visible within the `Your History` tab
@@ -171,12 +171,63 @@ information within the system
   - Additional options allow you to add attachments to the chat, customize your notifications
     to stay in the loop on the convesration, and easily view and update related records
 
-The Connect workspace provides a full-screen view of all your Connect Chat and Connect SUpport
+The Connect workspace provides a full-screen view of all your Connect Chat and Connect Support
 conversations in one place, plus additional tools to help keep track of important information
-in converations
-- To open the Connect workspace, navigate to **Collaborate > Connect Chat** or click the new
+in conversations
+- To open the `Connect workspace`, navigate to **Collaborate > Connect Chat** or click the new
   window icon (New window icon) in a chat mini window
   - If you do not have any recent conversations, a screen appears with helpful information
     about Connect
 
+**Connect Sidebar:** Provides access to conversations. The `Connect sidebar` behaves the same way
+in the workspace as it does in the `Connect overlay.`
+- The only difference is that the sidebar appears on the left edge of the `Connect workspace`
+**Conversation Pane:** Displays the currently selected conversation
+**Conversation Tools:** Provide quick access to:
+  - Key information
+  - Conversation Members
+  - Attachments
+  - Notification Preferences for the currently selected conversation
+- Some of the conversation tools vary depending on the type of conversation
 
+### Connect: Presence
+The **Presence** feature facilitates synchronous collaboration within one record and you
+can see who is online, view their current status, and what they are viewing are editing,
+all in real time
+
+Imagine a scenario in which you have a `critical outage`, documented in a `Priority 1 Incident record`.
+Multiple stakeholders may need to view and update the record _simultaneously_
+- The **Presence** features facilitates that collaboration, showing you who is viewing the
+  record, displaying the record activity stream, and eve allowing you to customize notifications
+  alerting you to record updates
+
+The number of active viewers is listed in the form title bar
+- **NOTE**: If you do not see this icon, you are the only `viewer` on this record
+  - Click for a list of `viewers`
+
+Click the **Show Activity Stream** icon to jump to the record `Activity` section, which
+includes the record history and updates by you and other viewers
+
+**Follow** the record to receive notifications when the record is updated
+- **Open Connect** (Mini or Full) to customize these notifications or start a real-time
+  conversation with the record viewers and other stakeholders
+
+`Real-time Presence` means you know a few things:
+- You know who is online and if they are `actively engaging you`
+- You know, when working through records together, _WHAT_ they are doing exactly (typing or
+  viewing), and _WHAT_ they have done (updated the `priority field` in a record or changed the
+  `description` for example) all in **real time**
+
+### Connect: Editing
+`Real-Time Editing:` Edit records in real-time, and see edits saved by other users (just
+like in Google Docs) which improves collaborative efforts
+`Activity Stream Inline Editing:` Contributes to actual work inside activity streams, without
+drilling into the records themselves, getting the work done more quickly
+
+Real-time editing is an extension of `Presence`. It allows you to work with others on the
+same `Record`, indicating their state (editing or viewing) as well as what their edits are
+
+Connect provides `real-time visibility` into edits being made to what you are working on to make sure everyone is taking the correct actions - **speeding up getting things done**
+
+Inline commenting on the activity stream means you can annotate active records as updates are
+made, allowing multiplied efforts across several pieces of work simultaneously
