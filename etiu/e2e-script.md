@@ -1,0 +1,339 @@
+# Express to Enterprise Upgrade Script
+## Express To ITSM Upgrade
+
+Can you see my screen?
+
+Will there be anyone else joining this call?
+
+"Is it alright that I record this, for future training purposes?"
+
+We are now recording.
+
+Today what we'll be doing is going through an hour long presentation that will walk you
+through what the upgrade process is, how it works, and give you some information about
+your upgraded instance and what it looks like under the hood. Review the upgrade roadmap today,
+to make sure we are on the same page in terms of the schedule
+
+for the second half, we already have your enterprise developer instance generated and upgraded, so
+for the second half of this call i'll have you take over and share your screen, and we'll jump into
+your developer instance to take a look at some of the key new features now available to you with
+enterprise
+
+my name is Will, and I am part of a team of other remote services professionals that work across
+the country. if there is anything I am unable to answer for you, our team should be able to get
+the answer for you. There are some things that do lie outside the scope of the remote services
+department and really more in the hands of your sales rep. We will work with you as much as possible
+to get in contact with them, but sometimes really the quickest way to get that information from your
+sales rep is for you actually to contact your sales rep.
+
+my goal here is really twofold:
+1. make sure you are upgraded in a technically sound manner. we begin this process with a techincal
+validation that has been done on your developer instance, and we'll get more into how that plays into
+the whole upgrade process in a moment here
+-and then-
+2. as we upgrade you, you're feeling confident and secure with your new instance. Having some knowledge
+   about what is there and avialable to you now, but also where you can go to get more knowledge, or
+   more assistance with your training
+
+There are a few more points I'd like to make as we continue here:
+
+Your participation is a critical part of the success of this process. We have a timeline, but sticking
+to that timeline depends on your participation as much as mine. So we are working together here.
+
+Now this is not necessary, but if you are working with a Service Partner, we want ot reach out to them
+to ensure they have the information they need.
+Are you working with a Service Partner?
+
+Aja's Experience (Optional)
+The shift from Express to Enterprise.. Once you're onto Enterprise, if you continue to use the instance
+the same way, you'll see a lot more available to you. You can choose to not use the Enterprise features
+and only use the Express features. I do not recommend it, as you'll find the Enterprise features can
+make your life a whole lot easier, but that is an option. If you are looking to take advantage of some
+of the more compex Enterprise features (or even just shifting to them), I recommend getting some
+support early on in your joruney, as I see clients that have that support are more successful long term.
+
+They also save money, time, and energy down the road, the reason for that being because Enterprise has
+so many moving pieces, there being so much we can now do with incorporating scripting, since there are
+now so many options you may be moving forward in a direction that you really don't want to be going long
+term, and could need to be un-done. Doesn't necessarily have to be a Service Partner or Remote Admin
+hours, it could be going to a local ServiceNow meetup group, or even taking the time to do some of
+the training (some is free, some do have a cost), reading documentation. As long as you recognize that
+in Express, while you could jump in and make configurations without worrying too much long term, with
+Enterprise we want to think carefully about what we are doing and how we set things up.
+ 
+How does this all work?
+
+You have currently your Express, Production Instance. What we've already done is spun up a new Express
+instance, cloned your Express Production Instance (your live instance) down to that new Express instance,
+so that we have a copy, and then we performed the upgrade process on that cloned, copied express instance.
+
+That is seperate from your Production instance, so there has been no business impact. And that
+cloned instance, where we performed the upgrade process, that is now your Enterprise Development
+Enterprise, sometimes referred to as your Sub-Production (or sub-prod) instance. But that is your
+Developer (or Dev) instance, and it is now on Enterprise. So what we want to do here is during the second
+half of this call, is to take a look in it and explore some of the new features. But for the next two
+days, you'll be validating that Developer instance, and I'll talk a little more about what you're
+doing during that validation process, and then once your validation is complete, we perform the
+Production upgrade (the Prod upgrade), and during this Production Upgrade (the upgrade of your
+live, production instance), there is a business impact. Your instance is unavailable for 2-4 hours.
+
+It says 2 hours on the slide, but I like to say 2-4 hours so that we have that buffer. Generally it
+is closer to 2, but just to stay safe we give all of our Production Upgrades a little more time as
+sometimes the upgrade can run over 2 hours. We begin that live prod upgrade at 11pm, as we do this
+local time.
+
+May I ask what time zone you are located in?
+
+Eastern. Ok. So we could schedule that Production Upgrade (do not have to answer right this second,
+i am still going to be giving you some more information on the validation process), but we could
+schedule this for as soon as 11pm Tuesday (2 days after this call), or if that's too soon, we could
+do 11pm Wednesday, we wouldn't want to push it too much further out than that. Then, after that
+Production Upgrade, we have another meeting together, this one being our `Best Practice` session.
+
+During our Best Practice session, we'll be talking about how you move configurations from your
+Developer instance to your Production instance using Update Sets. Do you have any resources already
+available to you to help you with the administration of your instance? To make sure we are getting the
+most use out of these upcoming sessions, do you have a system administrator with Enterprise experience
+who will be taking over or will it be an Express sys-admin who will be learning Enterprise?
+
+Let me jump into what's involved with the validation, this would be something that you'd begin with the
+close of our call today, and continue up until we do the Production Upgrade. I have performed technical
+validation on your Developer instance (which again is your cloned Express Production instance that we have
+already upgraded to Enterprise), and we know that whatever we see with the Developer instance is what we are
+going to see with our Production instance because we are performing the same process. We can be confident
+that if the Developer instance is looking good technically, the Production instance will also. What we need to
+check now are things that you really have the best knowledfge about, which is your core data and your business
+processes.
+
+I am going to ask you to check different tables in your instance, if you have any custom tables, that the data
+has carried over. One way to check that is to verify that the number of records in your Express Production
+instance table are the same as your new Developer instance table. Checking the form itself, making sure
+that the form looks the same as it does in express. One form in particular I'll ask you to pay attention to
+is `Incident`, and if you have any custom tables. There is your `Users` table, and you may see some extra
+`Demo` Users in your Developer instance. You just want to ensure that there are no fewer users, and no duplicates
+in your Developer instance that we're not seeing in Express.
+
+Companies, Locations, Departments, new tables like that. Groups and Roles are tables you will want to check.
+Our goal here is to make sure that when we perform the Production Upgrade, your fufillers and end-users
+will not be noticing any difference, and that everyone will be able to do the work that they expect to do, with
+everything being where they expect it.
+
+With the roles table, be aware that OOB with Express there are 5 Roles total (and we really only primarily
+use 3 or 4 of them, ITIL, ITIL Admin, and Knowledge Role). With Enterprise, I want to say there are about 72 roles
+OOB and one area in particular is Reporting. If you have any users who use Reporting, whether that is
+viewing reports, creating reports, editing reports, make sure that you impersonate those users and ensure
+that they have access. In Enterprise, there are a number of roles that all together grant that reporting
+access (more granular control), where as in Express, we only have the ITIL role that is bundled into
+the Reporting Role. When carrying over your configuration from Express to Enterprise, it doesn't always know
+how to interpret that blanket ITIL access to reporting in terms of the more granular Enterprise Reporting
+Role options. If you see anything like that, let me knowe'll make sure that they get the correct role so
+they have the right access to the reporting needs they have.
+
+Once you check that your core data is there with integrity, you want to impersonate different users, different
+roles, impersonate an end-user, create an incident, create a request or a catalog item. If you have any
+order guides, create a request with those. If using order guides doesn't make any sense to you, no worries.
+Then, walk through the entire process (For Example, impersonate a fufiller and take all the actions a Fufiller
+would, all the way until the closure of an incident or request. When closed, ensure that the end-user's
+view of that form versus the fufiller's view, that everyone has the correct access and can see the proper
+fields on those forms based on their level of access).
+
+Also want to make sure you validate Notifications. By default, notifications are turned off in your
+developer instance. That's not the case with your Enterprise instance, but with your Developer instance they are
+actually turned off. I will include some instructions about this, and there is some information included in this
+Kickoff as well, on how to turn on those email properties so you can validate both inbound and outbound
+notifications, whichever you were using in the past. If you weren't using notifications previously, no need
+to validate.
+
+- Any Questions? -
+
+Do you have an LDAP integration, or Okta, SSO?
+
+Ok, great. With your developer instance, we've generated a new URL, and as of right now you do not have an Okta
+set up for that new URL. So, we'll have to use local credentials to do your validation. If you need any help,
+I do have that remote services account so I can help get you in as well. If you want to set up an Okta login
+for your developer instance, that's an option. I recommend doing that during support week, we have Day 1
+kickoff and guided tour. You complete your validation on Day 2, wait until your Prod instance has been
+upgraded before setting up any Okta logins for your Dev instance because it's not going to be something that
+tells us any information setting it up. It is not helpful in terms of validation, but I can understand
+wanting to get it setup, and it be best to do that while you can leverage the support you'll have for
+those first five days after you have upgraded.
+
+For your Production instance, there is no URL change, so Okta is already setup for that Prod URL and
+there will be no change there, it will continue to function as it has been. We ask of course during this
+upgrade process, until we have that Best Practices sesssion, please be sure that whether its in Dev instance
+or Prod instance that there is no actual configuration being done. We want to stay away from
+configuration during this time. You'll be still creating records, capturing data, and performing
+your validations on the Developer instance, but we ask in both instances that we do not actually do
+any Development work during this process.
+
+Any questions so far?
+
+Today, we'll have your guided tour. This is a high level introduction to some new key features available
+to you in your Enterprise instance. There are a lot of topics on here, anything that we do not get to cover
+today we'll be able to review during our Best Practices session, but we'll take a look at the Graphical Workflows,
+look at some Contextual Security, SLA's, and we'll look at many of the key places in your new Enterprise instance
+where you can implement scripting. Do you have any development background or scripting knowledge personally,
+no worries if you do not! You will not be scripting most of the time, but that feature is available to you. It
+is not very heavy scripting, it is utilzling JavaScript and enables you to do more than you could without
+scripting, but that being said there is A LOT that you can do without scripting at all. SOmething I've found
+is coming from Express, and having some knowledge of scripting background but not so much it's your first
+instinct to put yourself into a scripting solution, actually positions you in a good place! Because Best
+Practice is if you can do something with a conditional drop down, if you can do something through
+configuration rather than customized scripting, we want to take that approach first because it's going to
+be more cost-efficient for your organization in the long-run. It's faster, too, instead of reading another
+developer's script and try to get into their head to see their real intentions for why they wrote their
+script the way they did, we can utilize the configuration options that Enterprise gives us that you are
+already familiar with in a lot of areas in Express, it's a little more straightforward and easier to pick up
+for someone else down the line.
+
+For the best practice session, we'll look at Update Sets. We want to make sure that you are set up to pull
+your Update Sets from Dev to Prod, so there's some setup we'll do together. Same with cloning, we'll show
+you how to request a system clone and ensure that you're setup to make that request. And then we can talk
+about Upgrades in Enterprise, Plugins, any other topics that you'd like us to cover or any that you know off
+the top of your head that aren't listed here, just let me know ahead. Update the ticket in HI and let me know!
+These sessions are recorded and are each 2 hours long.
+
+We do have a suggested Validation Checklist, and this contains a checklist of items to guide you through
+the validation process. This may not all apply or be appropriate for you in your situation, and there may
+be additional things you'd like to validate as well.
+
+Taking a look at our schedule, by the time we complete our call here it will be 3pm, so that will give you a
+few more hours in your day. We could schedule the Prod upgrade for Tuesday, 11pm Eastern Time (Kickoff is
+at 1pm Monday), or we could do Wednesday 11pm to give you the extra day to validate. What do you think is
+the most realistic? Then, we want to look for a time to schedule the Best Practice session.
+
+Because you have familiarity with Update Sets, not worried once on Prod with a sys-admin that has some
+general SN background. Is there a particular day that works best for you?
+
+These next 2 slides will be talking about some of the differences between an instance that is upgraded
+from Express to Enterprise, and one that is freshly spun out of the box as an Enterprise instance. Functionality
+wise, they have all the same functionality, it's just that to enable us to view the entire Express to Enterprise
+upgrade process, to enable the carryover of your Express functionality, configuration, and data and do it in
+a way that is smooth and non-destructive to your end-users and fufillers, to enable that we have
+some differences under the hood. This is something that, if you're working with a ServiceNow developer that
+may have years of experience with the Enterprise platform, but sometimes the more experience that a ServiceNow
+developer may have with Enterprise, the less experience they have with Express, so it's important to share
+this information with them so they're not confused or surprised when they look at your upgraded instances
+and see these differences under the hood.
+
+What are those differences? First and foremost, for your end-users and fufillers they are going to experience
+the same functionality. It will take a VERY observant end-user or fufiller to really notice that there's been
+a differnce. To show you what I mean, here's a snapshot of Admin View in an Express Instance, and here's the same
+instance after it's been Upgraded to Enterprise. Someone who is super observant may notice that the size of
+the logo and banner are slightly smaller in Enterprise, and there is slightly different shadowing on the
+tiles in the dashboard. Again, there wil be very little visual difference between the two instances.
+
+As a system admin, you'll see once we're in your instance that there are a lot of differences in your new
+instance. Number one, you'll see there are way more options, more applications, available to you in Enterprise
+versus what was in Express. Don't feel overwhelmed as that is a common feeling, you are not expected to know every
+single application inside and out. There are very, very few ServiceNow developers that know all these applications
+at an expert level.
+
+To get into a little more detail on what those differences are, one of them is that there are a number of plugins.
+Are you familiar with the concept of plugins? You may have seen them before, they are pretty quick and easy ways
+activate a whole set of features. Some plugins are free, and some do have a cost associated with them.
+Once activated, they cannot be deactivated. With a freshly spun up instance, there are a number of plugins
+that are activated by default. However, in your particular case, because we are upgrading your Express Instance
+to Enterprise, there are going to be a number of plugins that would have been activated in a freshly
+spun up instance that are not currently activated. They're there, you can activate them if you ever want
+to, but by default they are de-activated.
+
+There is a list of these plugins in this Upgrade Guide, which I also included when I reached out to you
+via the HI Service Portal. I strongly recommend that you take a look and read through this upgrade guide, it
+has a lot of helpful information in there, including this list of plugins (about 30) that will be inactive
+in your instance by default. We also strongly recommend that you activate these plugins one by one, instead
+of all at once, so you can kind of see what the differences are and ensure your instance will function the
+way you intend it to. Of course, if you're working with a Service Partner, they may be comfortable doing
+it differently, but our recommendation is activating these new plugins one-by-one, and only as-needed.
+
+Any questions?
+
+Once plugins are active, they cannot be de-activated. Upgrade guide shows which plugins will have
+a fee associated with them. If you have any doubt about costs associated with plugins, please reach out to
+your Sales Rep, as they will have that information for you most accurate and sooner than anyone else. Sometimes if
+there is a fee associated with a plugin, you may have already paid that fee as a part of a bundle or something
+else, you just want to confirm that again with your Sales Rep.
+
+SOme other differnces are that some modules will retain their Express Name, rather than adopt
+their Enterprise name.
+Example: In Express, we have the module Catalog Items under our Service Catalog Application. In Enterprise,
+the module `Catalog Items` is by default called `Maintain Items`, but in your upgraded instance the naming
+does NOT change. This may confuse a system admin who does not have prior exprience with Express instances,
+but they still should be able to find many of the modules pretty quickly.
+
+Another difference is ACLs (how we control access to certain areas of the instance, whether it
+be fields and the data contained inside of those fields, or even entire tables), those ACLs in your instance
+will look a little different than from a freshly-spun-up Enterprise instance, again we want to retain
+that Express experience so that your fufillers and end-users have as smooth of a transition to Enterprise as
+possible. Likewise, we're carrying over Express features and those continue to be what your instance runs on,
+instead of just jumping straight into Enterprise, as there is some setup required, which we'll be touching on
+later today.
+
+Your instance will still be running on Execution Plans and Approval Rules, which are unique to Express
+(at least Approval Rules are), but now you have that option, when you are at a pace that is appropriate for
+you (no pressure from a particular timeline), you can start shutting down Execution Plans and Approval Rules
+and start shifting over to Workflows instead.
+
+Do you currently have items in your Service Catalog, and are you currently using a Service Catalog at all?
+
+yes.
+
+Ok, that's probably somnething you'll want to take a look at with your Service Partner. Especially because
+sometimes in Express where it makes sense to create what's called a `Record Producer`, it's not necessarily
+the case in Enterprise. You'll want to have the review with them, where they can come in and say "Oh,
+well you might be better off with an Order Guide" for example, depending on the situation. Revisting what
+your original business goals were can be very helpful, there are so many limitations that Express imposes
+upon us whether that's through the Service Catalog or the Change Form (that's another big area), and we
+often compromise on our requirements to make it work, so now is a great opportunity to revisit these things
+with your Service Partner or just yourself too, to ensure whatever you're building out will give you the
+full functionality available to you with the Enterprise platform and set you up for long-term success down
+the road.
+
+We also have some documentation too provided by ServiceNow where they cover the Express to ITSM Upgrade
+through this guide here, so I do recommend that you take a look at this and share this with your
+Service Partner. Do you have any questions on anything that we've covered so far?
+
+We're almost done with this portion of the presentation!
+
+Some basic info here:
+The Remote Services Department is open Monday through Friday, 9-5. 9-5 can get a little blurry working across
+multiple time zones, but the idea being that we are working 8 hours a day. If it's a really urgent emergency,
+there is the HI service portal, there is the request escalation button on your ticket, but by and large
+there may be a little time between when you reach out to us and when we're able to respond. I am aware
+of what stage you're at in the process, and knowing that you're entering the validation process, I am going
+to be keeping a closer eye on your ticket than I would be otherwise.
+
+Please be sure if you're reaching out to me to get in contact, that it's either through the HI Service Portal
+or by replying to one of the notifications generated from the tickets within the HI Service Portal. If you try
+to reach me by email, it most likely will not be successful unfortunately as I am constantly receiving a lot of
+automated emails and things easily get lost in there versus when I go into HI and am actively monitoring
+the tickets myself. The other reason is because we want these tickets to have as many conversations on them
+as possible as a record of truth, which can then be referred to later on, in the case down the road
+you create an incident and that incident is in some way tied to your upgrade, there are records of everything
+that had happened throughout that upgrade process. Any questions?
+
+You may have seen a Change Record that was created. Again, don't reach out to me on that Change Record as
+I won't see it. Likewise, be sure if possible to reach out to me first if you run into anything unexpected
+during the validation process. It could just be a knowledge transfer issue, it could be something very simple
+like ensuring the proper role is granted to a user, or it could be something more complex that requires an
+incident to be created. If that's the case, I would go ahead and create that incident for you. That way,
+I personally can assure that it's getting the proper attention for being an Upgraded Incident that it should have.
+
+If at any point you feel in any way confused, uncomfortable, anything less than 100% Satisfied or
+Comfortable, please let me know. I am more than happy to adjust my approach, hop on a quick call, change
+how I'm doing things to ensure that you know what is going on and are on the same page with me. If for any
+reason that you're not comfortable reaching out to me, you can always reach out to my manager Juliet
+Acuff @ servicenow.com, I would just ask that you copy remoteservices@servicenow.com on that communication as well
+
+We do have a customer feedback program. You should get a survey a few weeks after your upgrade process has been
+complete, and we do like to hear good news as much as room for improvement! I point that out because sometimes
+there are calls to change things, and if we hear things where customers like how we approach a certain aspect
+of the process, sometimes those comments are just as valuable as when we do need to go ahead and change something.
+
+Any questions on anything we've covered so far in this presentation?
+
+Go over scheduling again, when they will be offline.
+
+For this next portion, I am going to stop sharing my screen, and turn it over to you. I will be sending you your
+Dev Instance URL in the meeting's chat, and I ask that you navigate to that URL and share your screen so we can
+begin the second portion of our call today.
