@@ -1,49 +1,60 @@
 # Express to Enterprise Upgrade Script
-## Express To ITSM Upgrade
+## Express To ITSM Upgrade // Paired with ETIU Services Kick-off 2017 v3.0 Slide Deck
 
-Can you see my screen?
 
-Will there be anyone else joining this call?
+### Introduction + Set Up (Slide #1)
+**Can you see my screen?**
+**Will there be anyone else joining this call?**
 
 "Is it alright that I record this, for future training purposes?"
 
 We are now recording.
 
+
+### Agenda (Slide #2)
 Today what we'll be doing is going through an hour long presentation that will walk you
 through what the upgrade process is, how it works, and give you some information about
-your upgraded instance and what it looks like under the hood. Review the upgrade roadmap today,
-to make sure we are on the same page in terms of the schedule
+your upgraded instance and what it looks like under the hood.
+- Review the upgrade roadmap today, to make sure we are on the same page in terms of the schedule
 
-for the second half, we already have your enterprise developer instance generated and upgraded, so
-for the second half of this call i'll have you take over and share your screen, and we'll jump into
-your developer instance to take a look at some of the key new features now available to you with
-enterprise
+For the second half of this session, we already have your enterprise developer instance generated and
+upgraded, so for the second half of this call i'll have you:
+- Take over and share your screen, and we'll:
+- Jump into your developer instance to take a look at some of the key new features now available to
+you with Enterprise
 
-my name is Will, and I am part of a team of other remote services professionals that work across
-the country. if there is anything I am unable to answer for you, our team should be able to get
-the answer for you. There are some things that do lie outside the scope of the remote services
-department and really more in the hands of your sales rep. We will work with you as much as possible
-to get in contact with them, but sometimes really the quickest way to get that information from your
-sales rep is for you actually to contact your sales rep.
 
-my goal here is really twofold:
-1. make sure you are upgraded in a technically sound manner. we begin this process with a techincal
+### Who Are We (Slide #3)
+My name is Will, and I am part of a team of other `Remote Services Professionals` that work across
+the country.
+**If there is anything I am unable to answer for you, our team should be able to get the answer for you.**
+There are some things that do lie outside the scope of the `Remote Services Department` and really more in
+the hands of your `Sales Rep`. We will work with you as much as possible to get in contact with them, but
+sometimes really the _quickest way_ to get that information from your `Sales Rep` is for you actually to
+get in contact with them yourself.
+
+**My goal here is really twofold:**
+1. To make sure you are upgraded in a technically sound manner. We begin this process with a technical
 validation that has been done on your developer instance, and we'll get more into how that plays into
-the whole upgrade process in a moment here
--and then-
-2. as we upgrade you, you're feeling confident and secure with your new instance. Having some knowledge
-   about what is there and avialable to you now, but also where you can go to get more knowledge, or
-   more assistance with your training
+the whole upgrade process in a moment.
+**-and then-**
+2. As we upgrade you, our goal is that you're feeling confident and secure with your new instance!
+   Having some knowledge about what is there and available to you now, but also where you can go to
+   get more knowledge, or more assistance with your training.
 
-There are a few more points I'd like to make as we continue here:
+### Critical Success Factors (Slide #5)
+**There are a few more points I'd like to make as we continue here:**
+- Your participation is a critical part of the success of this process. We have a timeline, but we
+  are really working together here to achieve that timeline. And sticking to that timeline really depends on
+  your participation as much as mine.
+- Now this is not necessary, but if you are working with a Service Partner, we want ot reach out to them
+  to ensure they have the information they need.
 
-Your participation is a critical part of the success of this process. We have a timeline, but sticking
-to that timeline depends on your participation as much as mine. So we are working together here.
+_Are you working with a Service Partner?_
+If **YES:**
+If **NO:**
 
-Now this is not necessary, but if you are working with a Service Partner, we want ot reach out to them
-to ensure they have the information they need.
-Are you working with a Service Partner?
-
+////////////////////////////////////////////////
 Aja's Experience (Optional)
 The shift from Express to Enterprise.. Once you're onto Enterprise, if you continue to use the instance
 the same way, you'll see a lot more available to you. You can choose to not use the Enterprise features
@@ -60,91 +71,131 @@ hours, it could be going to a local ServiceNow meetup group, or even taking the 
 the training (some is free, some do have a cost), reading documentation. As long as you recognize that
 in Express, while you could jump in and make configurations without worrying too much long term, with
 Enterprise we want to think carefully about what we are doing and how we set things up.
- 
-How does this all work?
+////////////////////////////////////////////////
 
-You have currently your Express, Production Instance. What we've already done is spun up a new Express
-instance, cloned your Express Production Instance (your live instance) down to that new Express instance,
-so that we have a copy, and then we performed the upgrade process on that cloned, copied express instance.
+### How does this all work? (Slide #6)
+You have currently your `Express Production Instance`. What we've already done is:
+- Spun up a new _Express Instance_
+- Cloned your `Express Production Instance` (your _current live instance_) down to that new
+  `Express Instance`, so that we have a **copy**, and then
+- We performed the upgrade process on that cloned, copied `Express Instance`.
 
-That is seperate from your Production instance, so there has been no business impact. And that
-cloned instance, where we performed the upgrade process, that is now your Enterprise Development
-Enterprise, sometimes referred to as your Sub-Production (or sub-prod) instance. But that is your
-Developer (or Dev) instance, and it is now on Enterprise. So what we want to do here is during the second
-half of this call, is to take a look in it and explore some of the new features. But for the next two
-days, you'll be validating that Developer instance, and I'll talk a little more about what you're
-doing during that validation process, and then once your validation is complete, we perform the
-Production upgrade (the Prod upgrade), and during this Production Upgrade (the upgrade of your
-live, production instance), there is a business impact. Your instance is unavailable for 2-4 hours.
+That is seperate from your `Production Instance`, so there has been no **business impact**. That
+`cloned instance`, where we performed the _upgrade process_, that is now your **Enterprise Development
+Instance,** sometimes referred to as your _Sub-Production (or sub-prod) Instance_. But that is your
+**Developer (or Dev) Instance**, and it is now on `Enterprise`.
 
-It says 2 hours on the slide, but I like to say 2-4 hours so that we have that buffer. Generally it
-is closer to 2, but just to stay safe we give all of our Production Upgrades a little more time as
-sometimes the upgrade can run over 2 hours. We begin that live prod upgrade at 11pm, as we do this
-local time.
+So what we want to do here is during the second half of this call is:
+- Take a look in it and explore some of the new features.
 
-May I ask what time zone you are located in?
+But for the next two days, you'll be validating that _Developer Instance_, and I'll
+talk a little more about what you're doing during that _validation process_, and then once your `validation` is
+complete, we perform the **Production Upgrade** (the _Prod Upgrade_), and during this **Production Upgrade** (the upgrade
+of your live, `Production Instance`), there **is a business impact**. Your instance is _unavailable for 2-4 hours_.
 
-Eastern. Ok. So we could schedule that Production Upgrade (do not have to answer right this second,
-i am still going to be giving you some more information on the validation process), but we could
-schedule this for as soon as 11pm Tuesday (2 days after this call), or if that's too soon, we could
-do 11pm Wednesday, we wouldn't want to push it too much further out than that. Then, after that
-Production Upgrade, we have another meeting together, this one being our `Best Practice` session.
+It says 2 hours on the slide, but I like to say 2-4 hours so that we have that buffer.
+- Generally it is closer to 2, but just to stay safe we give all of our `Production Upgrades` a little
+  more time as sometimes the upgrade can run over 2 hours. We begin that live `Production Upgrade` at
+  11pm, and we do this local time to avoid taking the instance during normal business hours.
 
-During our Best Practice session, we'll be talking about how you move configurations from your
-Developer instance to your Production instance using Update Sets. Do you have any resources already
-available to you to help you with the administration of your instance? To make sure we are getting the
-most use out of these upcoming sessions, do you have a system administrator with Enterprise experience
-who will be taking over or will it be an Express sys-admin who will be learning Enterprise?
+**May I ask what time zone you are located in?**
+_EXAMPLE ANSWER_: Eastern. Ok.
 
-Let me jump into what's involved with the validation, this would be something that you'd begin with the
-close of our call today, and continue up until we do the Production Upgrade. I have performed technical
-validation on your Developer instance (which again is your cloned Express Production instance that we have
-already upgraded to Enterprise), and we know that whatever we see with the Developer instance is what we are
-going to see with our Production instance because we are performing the same process. We can be confident
-that if the Developer instance is looking good technically, the Production instance will also. What we need to
-check now are things that you really have the best knowledfge about, which is your core data and your business
-processes.
+So we could schedule that `Production Upgrade` (do not have to answer right this second,
+I am still going to be giving you some more information on the _validation process_), but we could
+schedule this for as soon as:
+- **11pm Tuesday (_1 day after this call_)**, or if that's too soon, we could do:
+- **11pm Wednesday**
+  - We wouldn't want to push it too much further out than that.
+  - Then, after that `Production Upgrade`, we have another meeting together,
+    this one being our `Best Practice` session.
 
-I am going to ask you to check different tables in your instance, if you have any custom tables, that the data
-has carried over. One way to check that is to verify that the number of records in your Express Production
-instance table are the same as your new Developer instance table. Checking the form itself, making sure
-that the form looks the same as it does in express. One form in particular I'll ask you to pay attention to
-is `Incident`, and if you have any custom tables. There is your `Users` table, and you may see some extra
-`Demo` Users in your Developer instance. You just want to ensure that there are no fewer users, and no duplicates
-in your Developer instance that we're not seeing in Express.
+**During our Best Practice session, we'll be talking about:**
+- How you move configurations from your `Developer Instance` to your `Production Instance` using Update Sets.
+  - Do you have any _resources_ already available to you to help you with the administration of your instance?
+- To make sure we are getting the _most use_ out of these upcoming sessions, do you have a **system administrator**
+  with _Enterprise Experience_ who will be taking over, or will it be an `Express Sys-Admin` who will be learning **Enterprise**?
 
-Companies, Locations, Departments, new tables like that. Groups and Roles are tables you will want to check.
-Our goal here is to make sure that when we perform the Production Upgrade, your fufillers and end-users
-will not be noticing any difference, and that everyone will be able to do the work that they expect to do, with
-everything being where they expect it.
+### Customer Process Validation (Slide #9)
+Let me jump into what's involved with the `Validation`.
 
-With the roles table, be aware that OOB with Express there are 5 Roles total (and we really only primarily
-use 3 or 4 of them, ITIL, ITIL Admin, and Knowledge Role). With Enterprise, I want to say there are about 72 roles
-OOB and one area in particular is Reporting. If you have any users who use Reporting, whether that is
-viewing reports, creating reports, editing reports, make sure that you impersonate those users and ensure
-that they have access. In Enterprise, there are a number of roles that all together grant that reporting
-access (more granular control), where as in Express, we only have the ITIL role that is bundled into
-the Reporting Role. When carrying over your configuration from Express to Enterprise, it doesn't always know
-how to interpret that blanket ITIL access to reporting in terms of the more granular Enterprise Reporting
-Role options. If you see anything like that, let me knowe'll make sure that they get the correct role so
+This would be something that you'd begin with the close of our call today, and continue up until we
+do the `Production Upgrade`.
+
+I have performed _technical validation_ on your `Developer Instance` (which again,
+is your **cloned Express Production Instance** that we have already upgraded to `Enterprise`), and we know that
+whatever we see with the `Developer Instance` is what we are going to see with our `Production Instance` because
+we are performing the same process.
+
+We can be confident that if the `Developer Instance` is looking good technically,
+the `Production Instance` will also. What we need to check now are things that _you_ really have the best knowledge about,
+which is your:
+- **Core Data** and your
+- **Business Processes**
+
+I am going to ask you to check different tables in your instance.
+- If you have any `custom tables`, that the data has _carried over properly_.
+  - One way to check that is to verify that the number of records in your **Express Production
+    Instance** table are the same as your new **Developer Instance** table.
+- Checking the form itself for multiple tables
+  - Making sure that the form looks the same as it does in `Express`.
+  - One form in particular I'll ask you to pay attention to is `Incident`, and if you have any `custom tables`.
+- There is your `Users` table, and you may see some extra `Demo` Users in your Developer instance.
+  - You just want to ensure that there are _no fewer users_, and no `duplicates`
+    in your **Developer Instance** that we're not seeing in `Express`.
+- `Companies`, `Locations`, `Departments`, any new tables like that.
+  - `Groups` and `Roles` are tables you will want to check.
+
+Our goal here is to make sure that when we perform the `Production Upgrade`, your `fulfillers` and `end-users`
+will _not_ be noticing any **difference**, and that everyone will be able to _do the work_ that they expect to do, with
+everything being _where they expect it_.
+
+With the `Roles table`, be aware that `OOB with Express` there are only _5 Roles total_, and we really only primarily
+use 3 or 4 of them:
+- ITIL
+- ITIL Admin, and
+- Knowledge Role
+
+With `Enterprise`, I want to say there are about `72 roles OOB` and one area in particular is `Reporting`.
+If you have any users who use Reporting, whether that is:
+- `viewing reports`
+- `creating reports`
+- `editing reports`
+**make sure that you impersonate those users** and ensure that _they have access_.
+
+In `Enterprise`, there are a _number of roles_ that all together grant that `reporting
+access` (_more granular control_), where as in `Express`, we only have the **ITIL Role** that is bundled into
+the `Reporting Role`.
+
+When carrying over your configuration from `Express` to `Enterprise`, it doesn't always know
+how to properly interpret that **blanket ITIL access** to reporting in terms of the more `granular Enterprise Reporting
+Role` options. If you see anything like that, let me know and we'll make sure that they get the `correct role` so
 they have the right access to the reporting needs they have.
 
-Once you check that your core data is there with integrity, you want to impersonate different users, different
-roles, impersonate an end-user, create an incident, create a request or a catalog item. If you have any
-order guides, create a request with those. If using order guides doesn't make any sense to you, no worries.
-Then, walk through the entire process (For Example, impersonate a fufiller and take all the actions a Fufiller
-would, all the way until the closure of an incident or request. When closed, ensure that the end-user's
-view of that form versus the fufiller's view, that everyone has the correct access and can see the proper
-fields on those forms based on their level of access).
+Once you check that your **core data** is there _with integrity_, you want to:
+- `Impersonate` different users
+- Different roles
+- Impersonate an `end-user`
+  - Create an `incident`
+  - Create a `request` or a `catalog item`.
+- If you have any order guides, create a request with those.
+  - If using order guides doesn't make any sense to you, no worries.
+- Then, walk through the entire process:
+  - For Example, impersonate a `Fufiller` and take all the actions a `Fufiller`
+    would, all the way until the **closure** of an incident or request.
+  - When closed, ensure that the `end-user's` view of that form versus the `Fufiller`'s view,
+    - That everyone has the correct access and can see the _proper fields_ on those forms
+      based on their **level of access**
 
-Also want to make sure you validate Notifications. By default, notifications are turned off in your
-developer instance. That's not the case with your Enterprise instance, but with your Developer instance they are
-actually turned off. I will include some instructions about this, and there is some information included in this
-Kickoff as well, on how to turn on those email properties so you can validate both inbound and outbound
-notifications, whichever you were using in the past. If you weren't using notifications previously, no need
-to validate.
+Also want to make sure you validate `Notifications`.
 
-- Any Questions? -
+By default, `Notifications` are turned off in your `Developer Instance`. That's not the case with your `Enterprise
+Instance`, but with your `Developer Instance` they are _actually turned off_. I will include some _instructions_ about
+this, and there is some information included in this Kickoff as well, on how to turn on those `email properties` so you
+can validate both `inbound` and `outbound notifications`, whichever you were using in the past.
+- If you weren't using notifications previously, _no need to validate_!
+
+## Any Questions?
 
 Do you have an LDAP integration, or Okta, SSO?
 
