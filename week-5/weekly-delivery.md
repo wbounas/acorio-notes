@@ -36,7 +36,7 @@ Check out a client's history
 - Find out from your point of contact what's relevant, what's important to them
   - This will make the client feel more personalized and tailored
 
-5 Why's (Keep repeating `Why?`)
+**5 Workflow Why's (Keep repeating `Why?`)**
 - Eventually, you _will_ get to the business problem
 
 Most clients asks for the Solution, sometimes even they provide it!

@@ -122,12 +122,15 @@ schedule this for as soon as:
   **Enterprise**?
 - We want to do this soon as possible after the upgrade has been run.
   - Suggest the day after the upgrade, and then the day after
+- Next 5 Days: Personal Upgrade Helpline Available
+  - You'll have a helpline available to you 5 days pertaining to issues from the upgrade itself
 
 **Today, we'll have your `Guided Tour`**
 
 This is a high level introduction to some new key features available to you in your `Enterprise Instance`.
 There are _a lot of topics_ on here, anything that we do not get to **cover today** we'll be able to review
 during our _Best Practices_ session, but we'll take a look at:
+#### Slide #10
 - The Graphical Workflows
 - Contextual Security
 - SLA's
@@ -241,8 +244,9 @@ the `Reporting Role`.
 
 When carrying over your configuration from `Express` to `Enterprise`, it doesn't always know
 how to properly interpret that **blanket ITIL access** to reporting in terms of the more `granular Enterprise Reporting
-Role` options. If you see anything like that, let me know and we'll make sure that they get the `correct role` so
-they have the right access to the reporting needs they have.
+Role` options.
+- If you see anything like that, let me know and we'll make sure that they get the `correct role` so
+  they have the right access to the reporting needs they have.
 
 Once you check that your **core data** is there _with integrity_, you want to:
 - `Impersonate` different users
@@ -260,14 +264,18 @@ Once you check that your **core data** is there _with integrity_, you want to:
       based on their **level of access**
 
 Also want to make sure you validate `Notifications`.
+- Any notifications that are hanging during the `Upgrade Process` will wait in a queue,
+  and then go one-by-one when the `Upgrade Process` is complete
+  - This ensures that your system does not crash upon starting the `Enterprise Instance`
 
-By default, `Notifications` are turned off in your `Developer Instance`. That's not the case with your `Enterprise
+
+By default, `Notifications` are turned off in your `Developer Instance`. That's not the case with your `Production
 Instance`, but with your `Developer Instance` they are _actually turned off_.
 
 I will include some _instructions_ about this, and there is some information included in this Kickoff as well,
 on how to turn on those `email properties` so you can validate both:
 - `Inbound` and
-- `Outbound notifications`, whichever you were using in the past.
+- `Outbound Notifications`, whichever you were using in the past.
   - If you weren't using notifications previously, _no need to validate_!
 
 ## Any Questions?
@@ -280,8 +288,10 @@ Ok, great.
 With your `Developer Instance`, we've generated a `new URL`, and as of right now you do not have an **Okta**
 set up for that new URL.
 - So, we'll have to use `local credentials` to do your _validation_
-- If you need _any help_, I do have that `Remote Services Account` so I can help get you in as well.
-- OPTIONAL: ((If you want to set up an Okta login for your developer instance, that's an option.))
+- **IF HELP NEEDED**: If you need help setting this up, it is a little out of scope for this upgrade process, but
+  I'm more than happy to provide you some documentation on getting it set up!
+
+/////OPTIONAL/////
 
 I recommend doing that during your `Support Week`, we have Day 1 `Kickoff and Guided Tour`.
 You complete your `validation` on Day 2, wait until your `Production Instance` has been upgraded before setting
@@ -290,6 +300,8 @@ information setting it up.
 - It is not helpful in terms of validation, but I can understand wanting to get it setup, and
   it be best to do that while you can leverage the support you'll have for those _first five days_
   after you have upgraded.
+
+//////////////////
 
 For your `Production Instance`, there is **no URL change**, so **Okta** is already setup for that `Production URL` and
 there will be no change there
@@ -420,9 +432,10 @@ yes.
   full functionality available to you with the `Enterprise` platform and set you up for _long-term success_
   down the road.
 
+### Slide #16 for `Express to ITSM Upgrade Guide` Link
 We also have some _documentation_ too provided by `ServiceNow` where they cover the _Express to ITSM Upgrade_
 through this guide here, so I do recommend that you take a look at this and share this with your
-`Service Partner`.
+`Service Partner` (if you end up utilizing one).
 
 **Do you have any questions on anything that we've covered so far?**
 
