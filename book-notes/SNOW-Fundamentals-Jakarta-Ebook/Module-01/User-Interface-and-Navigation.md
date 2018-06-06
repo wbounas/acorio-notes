@@ -96,7 +96,7 @@ Each `customer organization` recieves **two instances of ServiceNow**
   - Quality Assurance (QA)
 
 
-![Key Platform UI Components](/images/ui-components.png)
+![Key Platform UI Components](./images/ui-components.png)
 
 ### Key Platform UI Components
 The User Interface (UI) is the main way to interact with `applications` and
