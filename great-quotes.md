@@ -8,3 +8,9 @@ Marci Parker
 
 Adam Mason
 # "Don't say `no` unless you can do it with a `yes`"
+
+Kathy Blackburn
+# "I'm a developer, so go ahead and trust me, but I do not know everything!"
+
+
+
