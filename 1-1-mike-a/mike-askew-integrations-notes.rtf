@@ -1,0 +1,100 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\i\b\fs40 \cf0 Mike Askew 1:1 on Integrations
+\i0\b0\fs24 \
+\
+
+\b \ul One of the first things (Best Practice)
+\b0 \ulnone \
+- Nothing worse than trying to do an Easter egg hunt trying to figure out what you\'92ve done, and where you\'92ve done it\
+	- Think about the END PERSON who will support it, not me as the dev\
+	- The Integration Application has multiple modules with everything split out\
+- Do NOT want people digging in your code to turn it off\
+	- ALWAYS have an On/Off property\
+- DO NOT Hard Code things in your code\
+	- Certain properties that code is calling can be properties that can be easily changed by the end-user\
+\
+\
+
+\b \ul On Freeway (internet) and taking offramp (Scripted REST)
+\b0 \ulnone \
+- One of the things that Mike did almost instantly who can use this REST service\
+	- Not just anyone with the ENDPOINT can use it\
+	- Created an ACL that allows one of the roles he created to use\
+\
+
+\b \ul Created Endpoint
+\b0 \ulnone \
+- POST\
+- Turn on versioning\
+	- What that does: allow you the capability where they may be Version 1 ( in the path ), you may have a different code base for Version 2\
+	- You can now support legacy as well as future\
+	- OOB when you create Scripted REST, Versioning is NOT ON\
+		- BP is to turn it on\
+		- Want code to still work even if someone isn\'92t on the latest version\
+\
+
+\b \ul Checking Things
+\b0 \ulnone \
+- ALWAYS have an escape hatch so it doesn\'92t land hard if it does error out\
+	- Not much code in the endpoint, most in a SCRIPT INCLUDE where he does most of the work\
+\
+
+\b \ul Spaces vs Tabs
+\b0 \ulnone \
+- Indent 1 space over\
+\
+
+\b \ul log.level
+\b0 \ulnone \
+- OOB\
+- every time Mike initializes a script include\
+- Tosses in name of script include\
+	- What happens in the logger\
+		- depending on the log level, the logger may or may not appear in the system logs\
+		- warnings, info\'85.you get to pick when that displays to the log\
+\
+
+\b \ul When doing an integration, if you have to support it it\'92s a pain to figure out what the heck happened
+\b0 \ulnone \
+- Typically, Mike logs everything that he does to a \'93sequenceMessage\'94\
+- Everything to a sequence, and at least the customer gets \'93I did it\'94\
+\
+
+\b \ul Sender Response
+\b0 \ulnone \
+- Just wants to know whether or not something happened, and what\'92s the error\
+- Very sparse\
+\
+\
+
+\b \ul JSUtil (need to know what it does)
+\b0 \ulnone \
+- All sorts of things\
+- Get it for free\
+- Rather than have one big long method, break things up into small chunks\
+	- Trying to make code extremely readable\
+\
+
+\b \ul acGlideUtil
+\b0 \ulnone \
+- Utility that Mike built (he\'92s built 100s)\
+	- Mike\'92s doing a GlideRecord (arguments are for the query)\
+\
+Get a second set of eyes\
+\
+
+\b \ul What is this actually doing?
+\b0 \ulnone \
+- Creating a Catalog Item\
+	- Not the first thing he did\
+	- Did a lot of validations\
+		- What should I check before I run off and create the Item?\
+- Calls an OOB API to create a Catalog Item (lines 160-167)\
+	- \
+}

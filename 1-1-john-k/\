@@ -1,0 +1,10 @@
+# 1:1 with John Kanthak Halloween 2018
+
+Commonly listening for .update() on a table (by default)
+- Workflow
+- Business Rules (when 'update' is checked)
+- Notifications
+
+
+Workaround to not trigger above when successfully update:
+.setWorkflow(false) <- interecepts the .update() event from hitting the above 3 features
