@@ -1,0 +1,49 @@
+# 2nd Meeting with John K (Mentor)
+
+Choice or Select Field
+- `Dropdown` / `Pulldown` Menu
+
+Is this data going to drive anything in the lifecycle of this business process?
+- If there's any significance, we should use a `Reference field` so that
+  we do not need a `script include` in order to grab
+choice: just strings (label of first + last name)
+as opposed to sys_id (unique 32 alpha-numeric string,unique identifier)
+
+if he is going to do an approval, or a major problem, and you need a workflow for the monitor...
+- in the workflow, you can use ${variables} using the sys_id, but with a `choice field`
+
+there is value in consistency in functionality, appearance
+- one of the biggest enemies of any implementation project (especially new) is
+  adoption and pushback from new users
+  - people don't like change as a rule
+    - being told "you have to now learn ServiceNow"
+- We want people to adopt early, get positive feedback back to management
+  as that directly affects acorio's CSAT score
+  - if people think it's hard to learn, we have NOT done a good job
+    designing an intuitive and easy to use/learn platform
+
+Example: Keep state in the same place (top of right column) for incident, problem, change
+- Don't se different labels for the same thing (user, employee, etc)
+
+
+**"Don't pave over the horse path" - John K.**
+- this is a major opportunity to improve your process, easier and faster to fill out the form
+- I know this adds to the learning curve, but we're going to help you manage that by making
+  it more intuitive
+  - The tool is an opportunity to redesign how you do basically everything in IT
+  - To professionalize the department receiving ServiceNow
+
+95% of the time you write seperate client scripts, versus piggy-backing on a pre-existing one
+- If you want to use one a previous acorian had written, just reach out to the
+  dev and ask if it's OK
+
+`addOption()` = adds choices to a `Choice Field`
+
+assignment:
+having a conversation
+why do you want to have a drop down?
+
+in my pdi:
+why don't you make this monitor a reference field
+write a script include using an adv ref qualifier
+filters the ref field, so they only see members of groups that beth anglin

@@ -2,6 +2,7 @@
 An Introduction to the Configuration Management Database Inside and Outside of ServiceNow
 
 CMDB - Configuration Management Database
+<<<<<<< HEAD
 - Configuration Management (CM) is an ITIL process that tracks all of the 
   individual Configuration Items (CI) in an IT system
   - The fundamental component of CM is the CM database (CMDB) which have the CI 
@@ -21,6 +22,19 @@ on and/or have relationships with other IT processes
                 are also ownership attributes
 - /Relationship/ - The relationships between hardware items (eg. a printer), 
                    software (eg. drivers), and users (eg. Alice)
+=======
+- Configuration Management (CM) is an ITIL process that tracks all of the individual Configuration Items (CI) in an IT system
+  -- The fundamental component of CM is the CM database (CMDB) which have the CI information and is used to understand the CI relationships and track their configuration and more
+  -- Contributing to lower cost and higher customer satisfaction
+
+A configuraiton item (CI) is an IT asset or a combination of IT assets that may depend on and / or have relationships with other IT processes
+  *ATTRIBUTES*
+  - /Technical/ - Data that describes the CI's capabilities which include software version and model numbers, HW and manufacturere specifications and other technical details like 
+    networking speeds and data storage size
+  - /Ownership/ - Part of financical asset management, ownership attriutes record purchase date, warranty, location, and responsibile person for the CI
+    -- ID numbers like bar codes and type, like software, hardware, and documentation are also ownership attributes
+  - /Relationship/ - The relationships between hardare itesm (eg a printer), software (eg drivesr), and users (ie Alice)
+>>>>>>> origin/master
 
 Everything inside a CMDB is either both, one or the other, or a mixture of both
 Asset Management - /Financial/
@@ -39,7 +53,11 @@ These classifications allow administrators to define the hierarchy of CIs within
   - So we can understand how different things impact one another
   - This is key and critical to ITOM, ITSM, it really becomes the *brain* of the business
 
+<<<<<<< HEAD
 */ITOM/ Concepts in an Initial Implementation/*
+=======
+*/ITOM Concepts in an Initial Implementation/*
+>>>>>>> origin/master
 - The path is different for every new ServiceNow custoer, but many ServiceNow kickoffs will involve the following components
 
 -- The MID Server is a server located WITHIN the client's internal network

@@ -1,6 +1,7 @@
 # Great Quotes
 ## by fellow Acorians
 
+<<<<<<< HEAD
 Ellen Daley
 ### "Great people beget great work"
 
@@ -46,3 +47,18 @@ Forgive me
 they were delicious
 so sweet
 and so cold
+=======
+
+Marci Parker
+# "Good is the enemy of Great"
+  - Great companies _constantly_ raise the bar
+
+Adam Mason
+# "Don't say `no` unless you can do it with a `yes`"
+
+Kathy Blackburn
+# "I'm a developer, so go ahead and trust me, but I do not know everything!"
+
+
+
+>>>>>>> origin/master

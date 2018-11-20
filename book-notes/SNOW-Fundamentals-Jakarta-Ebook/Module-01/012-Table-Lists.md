@@ -85,6 +85,7 @@ _controls_ for a `given list`
 accessed from `lists`, `columns`, or on `records` by using `right-click menus` which provide
 different **levels of controls:**
 - **List Context Menu:** you can _click_ the `list context menu icon` next to the title of the
+<<<<<<< HEAD
                          list to _access options_ related to viewing and filtering the entire
                          __record list__
 - **Column Context Menu:** click the `column context menu icon` in the _desired column header_
@@ -172,3 +173,6 @@ You can find information _quickly_ in ServiceNow by using any of the available s
 
 
 
+=======
+                         list
+>>>>>>> origin/master
